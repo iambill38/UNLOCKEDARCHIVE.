@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unlocked Archive</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            filter: brightness(0.5); /* Darken the video for better text contrast */
+        }
+
+        .header {
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+        }
+
+        .navbar {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 10px 20px;
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .navbar a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+            color: #ffffff;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+            color: #ffffff;
+            font-size: 14px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background">
+        <video autoplay muted loop>
+            <source src="C:\Users\User\Desktop\PROPS\UN0001-0250.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="header">
+        <h1>WELCOME TO UNLOCKED ARCHIVE &#153;</h1>
+    </div>
+
+    <div class="navbar">
+        <a href="https://www.instagram.com/iambill38/">BILLS VISION</a>
+          <a href="https://www.tiktok.com/@tadsvision">TADS VISION</a>
+          <a href="C:\Users\User\Desktop\WEB TECH WORK\Canvas.html"><strong>UNLOCKED</strong></a>
+        <a href="https://za.pinterest.com/Iambill38/">PINTEREST</a>
+        <a href="videoexpo.html">VIDEO EXPO</a>
+    
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Unlocked Archive. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        const background = document.querySelector('.background');
+
+        // Adjust background brightness dynamically based on mouse position
+        document.addEventListener('mousemove', (event) => {
+            const x = event.clientX / window.innerWidth; // Normalize horizontal position
+            const brightness = 0.5 + x * 0.5; // Adjust brightness based on X
+            background.style.filter = `brightness(${brightness})`;
+        });
+    </script>
+
+</body>
+</html>

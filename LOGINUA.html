@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: grey;
+        }
+        form {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: black;
+            border-radius: 10px;
+            box-shadow: gainsboro;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO UNLOCKED ARCHIVE</h1>
+
+    <fieldset id="form">
+        <legend>Login Here</legend>
+        <form id="validateForm" onsubmit="return validateForm()">
+            <label for="name">ENTER YOUR NAME</label><br>
+            <input type="text" placeholder="Enter your name here" id="name"><br><br>
+            
+            <label for="surname">ENTER YOUR SURNAME</label><br>
+            <input type="text" placeholder="Enter your surname here" id="surname"><br><br>
+            
+            <label for="email">ENTER YOUR EMAIL</label><br>
+            <input type="email" placeholder="Enter your email here" id="email"><br><br>
+            
+            <label for="number">ENTER YOUR NUMBER</label><br>
+            <input type="number" placeholder="Enter your number here" id="number"><br><br>
+            
+            <button type="submit">LOGIN</button>
+        </form>       
+    </fieldset>
+
+    <script>
+        // Validation function
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var surname = document.getElementById("surname").value;
+            var email = document.getElementById("email").value;
+            var num = document.getElementById("number").value;
+
+            if (name === "" || surname === "" || email === "" || num === "") {
+                alert("Please fill in the form before submitting.");
+                return false;
+            } else {
+                alert("Form successfully validated");
+                // Redirect upon successful validation
+                window.location.href = "unlockedarchive.html";
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
+

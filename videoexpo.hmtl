@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BILL WORLDWIDE</title>
+    <style>
+        body {
+            background-color: #333; /* Dark grey background */
+            color: #fff; /* Text color */
+            font-family: Arial, sans-serif; /* Font family */
+            padding: 20px; /* Add some padding */
+        }
+        h1 {
+            text-align: center; /* Center align the heading */
+        }
+        .video-container {
+            margin-bottom: 20px; /* Add some space below each video */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>VIDEO EXPO</h1>
+    </header>
+
+    <div class="video-container">
+        <h2>PRODUCT 002</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <h2>Video 2</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_HERE" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <!-- Add more video containers as needed -->
+
+</body>
+</html>
